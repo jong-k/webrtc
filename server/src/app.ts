@@ -6,8 +6,8 @@ import twilio from "twilio";
 const PORT = process.env.PORT || 5002;
 import { Server } from "socket.io";
 import { router } from "./router";
-// localhost 3000 에서만 접속 가능
-const ALLOWED_ORIGINS = ["http://localhost:3000"];
+// localhost 5173 에서만 접속 가능
+const ALLOWED_ORIGINS = ["http://localhost:5173"];
 
 const app = express();
 app.use(router);
