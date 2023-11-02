@@ -1,4 +1,4 @@
-.introduction_page_container {
+.pageContainer {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.introduction_page_panel {
+.pagePanel {
   width: 600px;
   height: 400px;
   background-color: white;
@@ -18,16 +18,16 @@
   justify-content: space-evenly;
 }
 
-.introduction_page_image {
+.pageImage {
   width: 150px;
 }
 
-.connecting_buttons_container {
+.connectingButtonsContainer {
   display: flex;
   flex-direction: column;
 }
 
-.join_room_button {
+.joinRoomButton {
   background-color: #2d8cff;
   border: 1px solid #e5e5e5;
   color: white;
@@ -37,13 +37,13 @@
   height: 30px;
   border-radius: 8px;
   transition: 0.3s;
+
+  &:hover {
+    background-color: blue;
+  }
 }
 
-.join_room_button:hover {
-  background-color: blue;
-}
-
-.create_room_button {
+.createRoomButton {
   margin-top: 15px;
   background-color: white;
   border: 1px solid #e5e5e5;
@@ -53,8 +53,8 @@
   height: 30px;
   border-radius: 8px;
   transition: 0.3s;
-}
 
-.create_room_button:hover {
-  background-color: #e5e5e5;
+  &:hover {
+    background-color: #e5e5e5;
+  }
 }
