@@ -1,7 +1,13 @@
+import s from "./index.module.scss";
+import webRtcLogo from "../../assets/webrtc.png";
+
 export default function IntroductionPage() {
   return (
-    <div>
-      <h2>hello from Intro</h2>
+    <div className={s.pageContainer}>
+      <div className={s.pagePanel}>
+        <img className={s.pageImage} src={webRtcLogo} alt="webrtc" />
+        Buttons
+      </div>
     </div>
   );
 }
