@@ -1,10 +1,10 @@
-.room_container {
+.roomContainer {
   width: 100%;
   height: 100vh;
   display: flex;
 }
 
-.chat_section_container {
+.chatSectionContainer {
   height: 100%;
   width: 20%;
   background-color: white;
@@ -12,20 +12,20 @@
   flex-direction: column;
 }
 
-.chat_label_container {
+.chatLabelContainer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.chat_label_paragraph {
+.chatLabelParagraph {
   font-weight: 700;
   color: #9ca5ab;
   margin-left: 40px;
   font-size: 16px;
 }
 
-.new_message_container {
+.newMessageContainer {
   width: 100%;
   height: 100px;
   display: flex;
@@ -34,7 +34,7 @@
   position: relative;
 }
 
-.new_message_input {
+.newMessageInput {
   border: 1px solid #d1dbe2;
   border-radius: 60px;
   padding: 0 20px;
@@ -44,16 +44,18 @@
   box-shadow: 2px 20px 5px rgba(0, 82, 201, 0.05);
 }
 
-.new_message_textarea:focus {
-  outline: none;
+.newMessageTextarea {
+  &:focus {
+    outline: none;
+  }
 }
 
-.new_message_button {
+.newMessageButton {
   position: absolute;
   right: 10%;
 }
 
-.messages_container {
+.messagesContainer {
   width: calc(100% - 70px);
   margin-left: 30px;
   margin-right: 30px;
@@ -62,31 +64,31 @@
   overflow-y: scroll;
 }
 
-.message_container {
+.messageContainer {
   margin-top: 5px;
   display: flex;
   flex-direction: column;
 }
 
-.message_align_left {
+.messageAlignLeft {
   align-items: flex-start;
 }
 
-.message_align_right {
+.messageAlignRight {
   align-items: flex-end;
 }
 
-.message_left_styles {
+.messageLeftStyles {
   background: rgba(0, 82, 201, 0.1);
   color: black;
 }
 
-.message_right_styles {
+.messageRightStyles {
   background: linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
   color: white;
 }
 
-.message_title {
+.messageTitle {
   margin: 0 0 10px 0;
   padding: 0 10px;
   color: black;
@@ -95,7 +97,7 @@
   display: block;
 }
 
-.message_content {
+.messageContent {
   margin: 0px 10px;
   padding: 10px 30px 10px 20px;
   border-radius: 25px;
@@ -103,25 +105,7 @@
   display: inline-block;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-  background: rgba(0, 188, 164, 0.1);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
-  border-radius: 10px;
-}
-
-.overlay_container {
+.overlayContainer {
   width: 100%;
   height: 100vh;
   background: rgba(0, 82, 201, 0.7);
@@ -150,7 +134,7 @@
   }
 }
 
-.participants_container {
+.participantsContainer {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -159,7 +143,7 @@
   height: 50%;
 }
 
-.direct_chat_container {
+.directChatContainer {
   height: 45%;
   display: flex;
   align-items: center;
@@ -167,7 +151,7 @@
   width: 100%;
 }
 
-.direct_chat_header {
+.directChatHeader {
   height: 50px;
   background: linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
   width: 95%;
@@ -178,25 +162,25 @@
   justify-content: center;
 }
 
-.direct_chat_header_paragraph {
+.directChatHeaderParagraph {
   color: white;
   font-size: 16px;
 }
 
-.new_message_direct_border {
+.newMessageDirectBorder {
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   width: 95%;
 }
 
-.direct_messages_container {
+.directMessagesContainer {
   flex-grow: 1;
   width: 95%;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
 }
 
-.participants_paragraph {
+.participantsParagraph {
   color: black;
   text-align: start;
   font-weight: 500;
@@ -204,14 +188,14 @@
   transition: 0.5s;
   margin: 0 40px;
   padding: 10px 0px;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-radius: 8px;
+  }
 }
 
-.participants_paragraph:hover {
-  background-color: #e5e5e5;
-  border-radius: 8px;
-}
-
-.participants_separator_line {
+.participantsSeparatorLine {
   width: calc(100% - 80px);
   height: 2px;
   background-color: #e5e5e5;
@@ -220,7 +204,7 @@
   margin-bottom: 5px;
 }
 
-.participants_section_container {
+.participantsSectionContainer {
   height: 100%;
   width: 20%;
   background-color: white;
@@ -228,20 +212,20 @@
   flex-direction: column;
 }
 
-.participants_label_container {
+.participantsLabelContainer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.participants_label_paragraph {
+.participantsLabelParagraph {
   font-weight: 700;
   color: #9ca5ab;
   margin-left: 40px;
   font-size: 16px;
 }
 
-.local_screen_share_preview {
+.localScreenSharePreview {
   position: absolute;
   width: 15%;
   height: 90%;
@@ -255,7 +239,7 @@
   justify-content: center;
 }
 
-.video_buttons_container {
+.videoButtonContainer {
   width: 60%;
   height: 10%;
   display: flex;
@@ -269,54 +253,58 @@
   border-top-right-radius: 25px;
 }
 
-.video_button_container {
+.videoButtonContainer {
   margin-left: 25px;
   display: flex;
   flex-direction: column;
 }
 
-.video_button_image {
+.videoButtonImage {
   height: 80%;
   padding: 10px;
   border-radius: 25px;
   transition: 0.3s;
-}
 
-.video_button_image:hover {
-  background: blue;
-  padding: 10px;
-  border-radius: 25px;
-}
+  &:hover {
+    background: blue;
+    padding: 10px;
+    border-radius: 25px;
 
-.video_button_end {
-  width: 200px;
-  height: 60px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 65px;
-  border: none;
-  color: white;
-  background: #fc5d5b;
-  box-shadow: 0px 3px 30px rgba(252, 93, 91, 0.1);
-  transition: 0.2s;
-}
+    .videoButtonEnd {
+      width: 200px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 65px;
+      border: none;
+      color: white;
+      background: #fc5d5b;
+      box-shadow: 0px 3px 30px rgba(252, 93, 91, 0.1);
+      transition: 0.2s;
 
-.video_button_end:hover {
-  background: red;
-}
+      &:hover {
+        background: red;
+        .participants {
+          display: flex;
+          width: 100%;
+          height: 100%;
+        }
+        .participants {
+          display: flex;
+          width: 100%;
+          height: 100%;
+        }
 
-.videos_container {
-  height: 90%;
-  width: 100%;
-  background-color: #f6f9fb;
-  position: relative;
-  border-radius: 0px 0px 25px 25px;
-}
-
-.participants {
-  display: flex;
-  width: 100%;
-  height: 100%;
+        .videoscontainer {
+          height: 90%;
+          width: 100%;
+          background-color: #f6f9fb;
+          position: relative;
+          border-radius: 0px 0px 25px 25px;
+        }
+      }
+    }
+  }
 }
 
 .participant {
@@ -342,7 +330,7 @@
   position: relative;
 }
 
-.screen_share_track {
+.screenShareTrack {
   position: absolute;
   display: flex;
   align-items: center;
@@ -364,7 +352,7 @@ video {
   height: 98%;
 }
 
-.room_label {
+.roomLabel {
   position: absolute;
   display: flex;
   width: 100%;
@@ -372,7 +360,7 @@ video {
   z-index: 4;
 }
 
-.room_label_paragraph {
+.roomLabelParagraph {
   font-size: 17px;
   color: white;
   margin-top: 0;
@@ -381,65 +369,65 @@ video {
   border-radius: 0px 0px 15px 15px;
 }
 
-.video_track_container:first-child:nth-last-child(1) {
+.videoTrackContainer:first-child:nth-last-child(1) {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.video_track_container:first-child:nth-last-child(2),
-.video_track_container:first-child:nth-last-child(2) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(2),
+.videoTrackContainer:first-child:nth-last-child(2) ~ .videoTrackContainer {
   width: 50%;
   height: 50%;
   position: relative;
 }
 
-.video_track_container:first-child:nth-last-child(3),
-.video_track_container:first-child:nth-last-child(3) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(3),
+.videoTrackContainer:first-child:nth-last-child(3) ~ .videoTrackContainer {
   width: 50%;
   height: 50%;
   position: relative;
 }
 
-.video_track_container:first-child:nth-last-child(4),
-.video_track_container:first-child:nth-last-child(4) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(4),
+.videoTrackContainer:first-child:nth-last-child(4) ~ .videoTrackContainer {
   width: 50%;
   height: 50%;
   position: relative;
 }
 
-.video_track_container:first-child:nth-last-child(5),
-.video_track_container:first-child:nth-last-child(5) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(5),
+.videoTrackContainer:first-child:nth-last-child(5) ~ .videoTrackContainer {
   width: 33%;
   height: 33%;
   position: relative;
 }
 
-.video_track_container:first-child:nth-last-child(6),
-.video_track_container:first-child:nth-last-child(6) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(6),
+.videoTrackContainer:first-child:nth-last-child(6) ~ .videoTrackContainer {
   width: 33%;
   height: 33%;
 }
 
-.video_track_container:first-child:nth-last-child(7),
-.video_track_container:first-child:nth-last-child(7) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(7),
+.videoTrackContainer:first-child:nth-last-child(7) ~ .videoTrackContainer {
   width: 33%;
   height: 33%;
 }
 
-.video_track_container:first-child:nth-last-child(8),
-.video_track_container:first-child:nth-last-child(8) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(8),
+.videoTrackContainer:first-child:nth-last-child(8) ~ .videoTrackContainer {
   width: 33%;
   height: 33%;
 }
 
-.video_track_container:first-child:nth-last-child(9),
-.video_track_container:first-child:nth-last-child(9) ~ .video_track_container {
+.videoTrackContainer:first-child:nth-last-child(9),
+.videoTrackContainer:first-child:nth-last-child(9) ~ .videoTrackContainer {
   width: 33%;
   height: 33%;
 }
 
-.video_section_container {
+.videoSectionContainer {
   height: 100%;
   width: 60%;
   display: flex;
@@ -447,7 +435,7 @@ video {
   justify-content: flex-end;
 }
 
-.full_screen {
+.fullScreen {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -455,7 +443,7 @@ video {
   left: 0%;
 }
 
-.label_only_audio_container {
+.labelOnlyAudioContainer {
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -467,7 +455,7 @@ video {
   left: 0%;
 }
 
-.label_only_audio_container {
+.labelOnlyAudioContainer {
   font-size: 18px;
   color: black;
 }

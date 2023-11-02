@@ -1,0 +1,164 @@
+.joinRoomPageContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.joinRoomPagePanel {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid grey;
+  filter: drop-shadow(0 0 0.2rem grey);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.joinRoomTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 35px;
+  margin-top: 80px;
+}
+
+.joinRoomInputsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.errorMessageContainer {
+  display: flex;
+  height: 50px;
+  margin-left: 35px;
+}
+
+.errorMessageParagraph {
+  color: red;
+}
+
+.loadingOverlayContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 82, 201, 0.7);
+}
+
+.loadingOverlayLoader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #0052c9; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkboxContainer {
+  display: flex;
+  margin-left: 35px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.checkboxConnection {
+  width: 25px;
+  height: 25px;
+  background: #2d8cff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxContainerParagraph {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.checkboxImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.joinRoomButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.joinRoomCancelButton {
+  width: 80px;
+  margin-right: 35px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  transition: 0.3s;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+}
+
+.joinRoomSuccessButton {
+  width: 80px;
+  margin-right: 15px;
+  height: 30px;
+  background-color: #2d8cff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  color: white;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: blue;
+  }
+}
+
+.joinRoomInputContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.joinRoomInput {
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  width: 300px;
+  height: 40px;
+  padding: 0px 15px;
+
+  &:focus {
+    border: 1px solid blue;
+  }
+}
