@@ -11,8 +11,8 @@ export default function JoinRoomPage() {
 
   useEffect(() => {
     const isHost = !!searchParams.get("host");
-    if (isHost) setIsRoomHost(true);
-  }, []);
+    setIsRoomHost(isHost);
+  }, [searchParams, setIsRoomHost]);
 
   return (
     <div className={s.joinRoomPageContainer}>
