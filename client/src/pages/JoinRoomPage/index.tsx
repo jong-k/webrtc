@@ -6,7 +6,7 @@ import JoinRoomContent from "../../components/JoinRoomContent";
 import { useHostStore } from "../../store";
 
 export default function JoinRoomPage() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const { isRoomHost, setIsRoomHost } = useHostStore();
 
   useEffect(() => {

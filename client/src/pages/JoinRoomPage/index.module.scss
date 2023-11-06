@@ -15,7 +15,7 @@
   filter: drop-shadow(0 0 0.2rem grey);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .errorMessageContainer {
@@ -122,14 +122,4 @@
   &:hover {
     background-color: blue;
   }
-}
-
-.joinRoomInputContainer {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  margin-top: 10px;
 }
