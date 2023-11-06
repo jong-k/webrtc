@@ -7,7 +7,8 @@ interface HostState {
 }
 
 interface ConnectState {
-  connectOnlyWithAudio: boolean;
+  isConnectOnlyWithAudio: boolean;
+  setIsConnectOnlyWithAudio: (isConnectOnlyWithAudio: boolean) => void;
 }
 
 // host state
@@ -21,9 +22,9 @@ export const useHostStore = create<HostState>()(hostStore);
 
 // connect state
 const connectStore: StateCreator<ConnectState> = (set) => ({
-  connectOnlyWithAudio: false,
-  setConnectOnlyWithAudio: (connectOnlyWithAudio: boolean) =>
-    set({ connectOnlyWithAudio }),
+  isConnectOnlyWithAudio: false,
+  setIsConnectOnlyWithAudio: (isConnectOnlyWithAudio: boolean) =>
+    set({ isConnectOnlyWithAudio }),
 });
 
 export const useConnectStore = create<ConnectState>()(connectStore);

@@ -18,7 +18,7 @@ export default function JoinRoomPage() {
     <div className={s.joinRoomPageContainer}>
       <div className={s.joinRoomPagePanel}>
         <JoinRoomTitle isRoomHost={isRoomHost} />
-        <JoinRoomContent />
+        <JoinRoomContent isRoomHost={isRoomHost} />
       </div>
     </div>
   );
