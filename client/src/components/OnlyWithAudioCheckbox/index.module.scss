@@ -1,0 +1,29 @@
+.checkboxContainer {
+  display: flex;
+  margin-left: 35px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.checkboxConnection {
+  width: 25px;
+  height: 25px;
+  background: #2d8cff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxContainerParagraph {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.checkboxImage {
+  max-width: 100%;
+  max-height: 100%;
+}

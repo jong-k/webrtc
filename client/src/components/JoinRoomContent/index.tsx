@@ -1,5 +1,6 @@
 import { useState } from "react";
 import JoinRoomInput from "../JoinRoomInput";
+import OnlyWithAudioCheckbox from "../OnlyWithAudioCheckbox";
 
 export default function JoinRoomContent() {
   const [roomId, setRoomId] = useState("");
@@ -13,6 +14,7 @@ export default function JoinRoomContent() {
         nickname={nickname}
         setNickname={setNickname}
       />
+      <OnlyWithAudioCheckbox />
     </div>
   );
 }
