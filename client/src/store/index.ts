@@ -6,6 +6,11 @@ interface HostState {
   setIsRoomHost: (isRoomHost: boolean) => void;
 }
 
+interface ConnectState {
+  connectOnlyWithAudio: boolean;
+}
+
+// host state
 const hostStore: StateCreator<HostState> = (set) => ({
   identity: "",
   isRoomHost: false,
@@ -13,3 +18,12 @@ const hostStore: StateCreator<HostState> = (set) => ({
 });
 
 export const useHostStore = create<HostState>()(hostStore);
+
+// connect state
+const connectStore: StateCreator<ConnectState> = (set) => ({
+  connectOnlyWithAudio: false,
+  setConnectOnlyWithAudio: (connectOnlyWithAudio: boolean) =>
+    set({ connectOnlyWithAudio }),
+});
+
+export const useConnectStore = create<ConnectState>()(connectStore);
