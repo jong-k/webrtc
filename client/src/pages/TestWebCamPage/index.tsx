@@ -6,15 +6,15 @@ export default function TestWebCamPage() {
 
   useEffect(() => {
     const mediaStreamConstraints = {
-      // video: true -> 간단히 이렇게도 가능
-      video: {
-        width: {
-          min: 1280,
-        },
-        height: {
-          min: 720,
-        },
-      },
+      video: true, // -> 간단히 이렇게도 가능
+      // video: {
+      //   width: {
+      //     min: 1280,
+      //   },
+      //   height: {
+      //     min: 720,
+      //   },
+      // },
     };
 
     navigator.mediaDevices
