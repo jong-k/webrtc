@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import s from "./index.module.scss";
 
 export default forwardRef(function WebCamPlayer(
   props,
@@ -6,7 +7,7 @@ export default forwardRef(function WebCamPlayer(
 ) {
   return (
     <div>
-      <video ref={ref} autoPlay playsInline></video>
+      <video className={s.player} ref={ref} autoPlay playsInline></video>
     </div>
   );
 });
