@@ -37,7 +37,7 @@ export default function TestShareWebCamPage() {
     const iceCandidate = e.candidate; // pc의 ice candidate (local 이면 remote)
 
     if (iceCandidate) {
-      const newIceCandidate = new RTCIceCandidate(iceCandidate);
+      const newIceCandidate = new RTCIceCandidate(iceCandidate); // 래핑 안하고 그냥 e.candidate 넣어도 됨
       const otherPeer = getOtherPeer(peerConnection as RTCPeerConnection);
 
       otherPeer?.addIceCandidate(newIceCandidate);
