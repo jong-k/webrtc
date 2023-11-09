@@ -10,6 +10,7 @@ export default function MainPage() {
         <Link to="./testsharewebcam">
           2. RTC PeerConnection 간 웹 캠 통신 테스트
         </Link>
+        <Link to="./testexchangedata">3. Data Channel 통신 테스트</Link>
       </div>
     </div>
   );
