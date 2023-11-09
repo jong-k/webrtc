@@ -1,0 +1,22 @@
+.button {
+  width: 4rem;
+  height: 3rem;
+  background: pink;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 5px;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.buttonBox {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

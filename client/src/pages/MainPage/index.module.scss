@@ -1,0 +1,25 @@
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+
+  a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: green;
+    }
+
+    &:visited {
+      color: black;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
