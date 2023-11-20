@@ -6,6 +6,7 @@ import RoomPage from "./pages/RoomPage";
 import TestWebCamPage from "./pages/TestWebCamPage";
 import TestShareWebCamPage from "./pages/TestShareWebCamPage";
 import TestExchangeDataPage from "./pages/TestExchangeDataPage";
+import TestAnotherBrowserDataPage from "./pages/TestAnotherBrowserDataPage";
 
 export const router = createBrowserRouter([
   {
@@ -35,5 +36,9 @@ export const router = createBrowserRouter([
   {
     path: "/testexchangedata",
     element: <TestExchangeDataPage />,
+  },
+  {
+    path: "/testanotherbrowser",
+    element: <TestAnotherBrowserDataPage />,
   },
 ]);
