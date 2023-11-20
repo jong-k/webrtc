@@ -11,9 +11,7 @@ export default function MainPage() {
           2. RTC PeerConnection 간 웹 캠 통신 테스트
         </Link>
         <Link to="./testexchangedata">3. Data Channel 통신 테스트</Link>
-        <Link to="./testanotherbrowser">
-          4. 다른 브라우저 탭 간 Data Channel 통신 테스트
-        </Link>
+        <Link to="./testsignaling">4. 시그널링 서버 연결 테스트</Link>
       </div>
     </div>
   );

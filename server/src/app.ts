@@ -25,7 +25,7 @@ const io = new Server(expressServer, {
 io.on("connection", (socket) => {
   socket.on("message", (message: any) => {
     console.log("message from client", message);
-    socket.broadcast.emit("message", message);
+    socket.broadcast.emit("message", message); // sender 이외 전체에 event 발신
   });
 
   socket.on("bye", () => {

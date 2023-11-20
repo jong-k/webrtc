@@ -6,7 +6,8 @@ import RoomPage from "./pages/RoomPage";
 import TestWebCamPage from "./pages/TestWebCamPage";
 import TestShareWebCamPage from "./pages/TestShareWebCamPage";
 import TestExchangeDataPage from "./pages/TestExchangeDataPage";
-import TestAnotherBrowserDataPage from "./pages/TestAnotherBrowserDataPage";
+// import TestAnotherBrowserDataPage from "./pages/TestAnotherBrowserDataPage";
+import TestSignalingPage from "./pages/TestSignalingPage";
 
 export const router = createBrowserRouter([
   {
@@ -38,7 +39,11 @@ export const router = createBrowserRouter([
     element: <TestExchangeDataPage />,
   },
   {
-    path: "/testanotherbrowser",
-    element: <TestAnotherBrowserDataPage />,
+    path: "/testsignaling",
+    element: <TestSignalingPage />,
   },
+  // {
+  //   path: "/testanotherbrowser",
+  //   element: <TestAnotherBrowserDataPage />,
+  // },
 ]);
